@@ -12,13 +12,13 @@
 
 <body>
   <div id="buttons">
-    <div id="view" class="btn" onclick="View()"><span>Aperçu</span></div>
-    <div id="save" class="btn" onclick="Save()"><span>Enregistrer</div>
-    <div id="import" class="btn" onclick="Import()"><span>Importer</span></div>
-    <div id="delete" class="btn" onclick="Delete()"><span>Supprimer</span></div>
-    <div id="flip"   class="btn" onclick="Flip()" style="display: none"><span>Retourner</span></div>
-    <div id="expand" class="btn" onclick="Expand()" style="display: none"><span>Agrandir</span></div>
-    <div id="shrink" class="btn" onclick="Shrink()" style="display: none"><span>Réduire</span></div>
+    <div id="view" class="btn" onclick="View()"><span>Դիտել</span></div>
+    <div id="save" class="btn" onclick="Save()"><span>Պահել</div>
+    <div id="import" class="btn" onclick="Import()"><span>Ներբեռնել</span></div>
+    <div id="delete" class="btn" onclick="Delete()"><span>Ջնջել</span></div>
+    <div id="flip"   class="btn" onclick="Flip()" style="display: none"><span>Պտտել</span></div>
+    <div id="expand" class="btn" onclick="Expand()" style="display: none"><span>Մեծացնել</span></div>
+    <div id="shrink" class="btn" onclick="Shrink()" style="display: none"><span>Փոքրացնել</span></div>
   </div>
   <div id="app">
     <div id="main-panel">
@@ -27,11 +27,11 @@
         ondragover="event.preventDefault()"
         ondragenter="event.preventDefault()"
       ></div>
-      <textarea id="frame-description" rows="5" placeholder="la description" style="width: 802px; font-size: 1.75em"></textarea>
+      <textarea id="frame-description" rows="5" placeholder="Նկարագրի՛ր գործողությունը" style="width: 802px; font-size: 1.75em"></textarea>
     </div>
 
     <div id="other">
-      <p class = "subtitle">Aperçu du storyboard</p>
+      <p class = "subtitle">Պատմատախտակի նախադիտում</p>
       <div id="panels">
         <div class="panel" id="panel0" onclick="loadFrame(this)"></div>
         <div class="panel" id="panel1" onclick="loadFrame(this)"></div>
@@ -42,8 +42,8 @@
       </div>
 
       <div id="imgSelect">
-        <p class="select active" id="select0" onclick="characters(); this.classList.add('active'); document.getElementById('select1').classList.remove('active')">Ajoute tes personnages</p>
-        <p class="select" id="select1" onclick="backgrounds(); this.classList.add('active'); document.getElementById('select0').classList.remove('active')">Choisis un arrière-plan</p>
+        <p class="select active" id="select0" onclick="characters(); this.classList.add('active'); document.getElementById('select1').classList.remove('active')">Ավելացրու կերպարներ</p>
+        <p class="select" id="select1" onclick="backgrounds(); this.classList.add('active'); document.getElementById('select0').classList.remove('active')">Ավելացրու ետնաշերտ</p>
       </div>
       <div id="images" class="addImages active"></div>
       <div id="backgrounds" class="addImages"></div>
